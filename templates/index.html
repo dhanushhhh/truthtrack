@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='trupic.png') }}" alt="Logo">
+    </div>
+    <form action="/predict" method="post">
+        <label for="text">Paste the News Article Here:</label><br>
+        <textarea id="text" name="text" rows="10" cols="30"></textarea><br>
+        <input type="submit" value="Check">
+    </form>
+
+    <!-- Work Row -->
+    <h2 style="text-align: center; padding-top: 50px; font-family: Arial, sans-serif; font-size: 32px; font-weight: bold;">IFCN fact-checking organizations</h2>
+
+    <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work" style="background-color: #f9f9f9; padding: 50px 0;">
+        <div class="w3-half" style="text-align: left;">
+            <div class="w3-quarter" style="margin-bottom: 20px;">
+                <p><strong>•</strong> <a href="https://www.boomlive.in/">Boom</a></p>
+                <p><strong>•</strong> <a href="https://api.whatsapp.com/send/?phone=917700906111&text&type=phone_number&app_absent=0" style="color: green;">Boom on WhatsApp</a></p>
+            </div>
+            <div class="w3-quarter" style="margin-bottom: 20px;">
+                <p><strong>•</strong> <a href="https://www.factcrescendo.com/">Fact Crescendo</a></p>
+                <p><strong>•</strong> <a href="https://api.whatsapp.com/send/?phone=919049053770&text&type=phone_number&app_absent=0" style="color: green;">Fact Crescendo on WhatsApp</a></p>
+            </div>
+            <div class="w3-quarter" style="margin-bottom: 20px;">
+                <p><strong>•</strong> <a href="https://factly.in/">Factly</a></p>
+                <p><strong>•</strong> <a href="https://api.whatsapp.com/send/?phone=919247052470&text&type=phone_number&app_absent=0" style="color: green;">Factly on WhatsApp</a></p>
+            </div>
+            <div class="w3-quarter" style="margin-bottom: 20px;">
+                <p><strong>•</strong> <a href="https://digiteye.in/">DigitEYE</a></p>
+                <p><strong>•</strong> <a href="https://api.whatsapp.com/send/?phone=919632830256&text&type=phone_number&app_absent=0" style="color: green;">DigitEYE on WhatsApp</a></p>
+            </div>
+        </div>
+        <div class="w3-half" style="text-align: left;">
+            <div class="w3-quarter" style="margin-bottom: 20px;">
+                <p><strong>•</strong> <a href="https://www.indiatoday.in/fact-check">India Today Fact Check</a></p>
+                <p><strong>•</strong> <a href="https://api.whatsapp.com/send/?phone=917370007000&text&type=phone_number&app_absent=0" style="color: green;">India Today Fact Check on WhatsApp</a></p>
+            </div>
+            <div class="w3-quarter" style="margin-bottom: 20px;">
+                <p><strong>•</strong> <a href="https://newschecker.in/">NewsChecker</a></p>
+                <p><strong>•</strong> <a href="https://api.whatsapp.com/send/?phone=919999499044&text&type=phone_number&app_absent=0" style="color: green;">NewsChecker on WhatsApp</a></p>
+            </div>
+            <div class="w3-quarter" style="margin-bottom: 20px;">
+                <p><strong>•</strong> <a href="https://www.newsmobile.in/?fbclid=IwAR0MlZQNMcjZHA-GydUuWEmOqXpBMWI_DEi0QJAcIJh2nTX_DUsMQ_XowAs">NewsMobile</a></p>
+                <p><strong>•</strong> <a href="https://api.whatsapp.com/send/?phone=911171279799&text&type=phone_number&app_absent=0" style="color: green;">NewsMobile on WhatsApp</a></p>
+            </div>
+            <div class="w3-quarter" style="margin-bottom: 20px;">
+                <p><strong>•</strong> <a href="https://www.thequint.com/?fbclid=IwAR3HacJqbDCSoEyIvogZAYcOrbcUhGIWw4HyEJ_nrWdXDTbVGa9uH1RF1dM">The Quint</a></p>
+                <p><strong>•</strong> <a href="https://api.whatsapp.com/send/?phone=919643651818&text&type=phone_number&app_absent=0" style="color: green;">The Quint on WhatsApp</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #000000;
+    color: #ddd;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+form {
+    margin-top: 2rem;
+    background-color: #141518;
+    padding: 1.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ... Rest of the CSS code ... */
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #ddd;
+}
+
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #635d5d;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: #141518;
+    color: #ddd;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #6d376e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #0649db;
+}
+/* ... */
+
+.result {
+    margin-top: 1rem;
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-weight: bold;
+    max-width: 80%; /* Limit the width of the result container */
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.5s ease; /* Smooth transition effect */
+    /* Make the result container responsive */
+}
+@media (max-width: 600px) {
+    .result {
+        font-size: 1.5rem;
+    }
+    
+}
+
+.fake {
+    color: #F44336;
+    background-color: #333;
+}
+
+.genuine {
+    color: #4CAF50;
+    background-color: #333;
+}
+
+/* Keyframes animation for the fake news background */
+@keyframes fakePopEffect {
+    0% {
+        background-color: #F44336; /* Initial red color */
+    }
+    50% {
+        background-color: #ffcccc; /* Lighter red */
+    }
+    100% {
+        background-color: #F44336; /* Return to initial red color */
+    }
+}
+
+/* Keyframes animation for the genuine news background */
+@keyframes genuinePopEffect {
+    0% {
+        background-color: #4CAF50; /* Initial green color */
+    }
+    50% {
+        background-color: #ccffcc; /* Lighter green */
+    }
+    100% {
+        background-color: #4CAF50; /* Return to initial green color */
+    }
+}
+
+/* Apply the animation to the fake news result */
+.fake.result {
+    animation: fakePopEffect 1s infinite; /* Apply the animation infinitely */
+}
+
+/* Apply the animation to the genuine news result */
+.genuine.result {
+    animation: genuinePopEffect 1s infinite; /* Apply the animation infinitely */
+}
+
+
+/* Add some animations */
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slide-down {
+    0% { transform: translateY(-2rem); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+form {
+    animation: slide-down 0.5s ease-out;
+}
+
+.result {
+    animation: fade-in 0.5s ease-out;
+}
+
+#work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  #work .w3-half {
+    flex-basis: 45%;
+    margin: 20px;
+  }
+  
+  #work .w3-quarter {
+    flex-basis: 22%;
+    margin: 20px;
+  }
+  
+  #work p {
+    color: #000000;
+    margin-bottom: 5px;
+  }
+  
+  #work a {
+    text-decoration: none;
+    color: #610263;
+    transition: color 0.3s ease;
+  }
+  
+  #work a:hover {
+    color: rgb(47, 0, 255);
+  }
